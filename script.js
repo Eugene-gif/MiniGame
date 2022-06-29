@@ -65,9 +65,9 @@ function setTime(value) {
   timeElement.innerHTML = `00:${value}`;
 }
 
-function finishGame() {
-  timeElement.parentNode.classList.add("hide");
-  board.innerHTML = `<div class="end-show"><h1>Натыкано: <span class="primary">${score}</span></h1><button class="restart" value="Refresh Page" onClick="window.location.reload();">Заново</button></div>`;
+function getRandColor() {
+  const index = Math.floor(Math.random() * colors.length);
+  return colors[index];
 }
 
 function createRandomCircle() {
@@ -90,13 +90,16 @@ function getRandomNumber(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
 
+function finishGame() {
+  timeElement.parentNode.classList.add("hide");
+  board.innerHTML = `<div class="end-show"><h1>Натыкано: <span class="primary">${score}</span></h1><a class="restart" href="#" onclick="parent.location.reload(); return false;">
+	Заново
+</a></div>`;
+}
+
 buttonUp.addEventListener("click", (evt) => {
   evt.preventDefault();
   screens[0].classList.remove("up");
   screens[0].classList.add("back");
 });
 
-function getRandColor() {
-  const index = Math.floor(Math.random() * colors.length);
-  return colors[index];
-}
