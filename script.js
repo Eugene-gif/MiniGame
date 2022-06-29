@@ -100,13 +100,18 @@ function finishGame() {
 buttonUp.addEventListener("click", (evt) => {
   evt.preventDefault();
   
-  screens[0].classList.remove("up");
-  screens[0].classList.add("back");
+  // screens[0].classList.remove("up");
+  // screens[0].classList.add("back");
+  screens[0].classList.toggle('back');
 });
 
 restart.addEventListener('click', (evt) => {
   evt.preventDefault();
+  screens[0].classList.toggle('up');
   window.location.reload();
+  screens[0].classList.toggle('up');
+  // screens[1].classList.remove("up");
+  // screens[1].classList.add("back");
 })
 /* <a class="restart" href="#" onclick="parent.location.reload(); return false;">
 	Заново
