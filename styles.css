@@ -29,6 +29,10 @@ a:hover {
   font-size: 1.5rem;
 }
 
+.screen {
+  position: relative;
+}
+
 h1 {
   line-height: 1.4;
   font-size: 4rem;
@@ -111,9 +115,10 @@ h1 {
   overflow: hidden;
 }
 
-.end-show {
-  display: flex;
-  flex-direction: column;
+.restart {
+  position: absolute;
+  bottom: 30%;
+  display: none;
 }
 
 .circle {
@@ -122,10 +127,6 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
 }
-
-/* .button-up {
-
-} */
 
 @media (max-width: 767px) {
   .board {

@@ -4,6 +4,7 @@ const timeList = document.querySelector("#time-list");
 const timeElement = document.querySelector("#time");
 const board = document.querySelector("#board");
 const buttonUp = document.querySelector(".button-up");
+const restart = document.querySelector('.restart');
 const colors = [
   "#d4531d",
   "#e1c133",
@@ -92,14 +93,24 @@ function getRandomNumber(min, max) {
 
 function finishGame() {
   timeElement.parentNode.classList.add("hide");
-  board.innerHTML = `<div class="end-show"><h1>Натыкано: <span class="primary">${score}</span></h1><a class="restart" href="#" onclick="parent.location.reload(); return false;">
-	Заново
-</a></div>`;
+  board.innerHTML = `<h1>Натыкано: <span class="primary">${score}</span></h1>`;
+  displayBlock();
 }
 
 buttonUp.addEventListener("click", (evt) => {
   evt.preventDefault();
+  
   screens[0].classList.remove("up");
   screens[0].classList.add("back");
 });
 
+restart.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  window.location.reload();
+})
+/* <a class="restart" href="#" onclick="parent.location.reload(); return false;">
+	Заново
+</a> */
+function displayBlock () {
+  return restart.style.display = 'block';
+}
