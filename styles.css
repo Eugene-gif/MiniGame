@@ -1,0 +1,144 @@
+/* @import url('https://fonts.googleapis.com/css?family=Khula&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Khula', sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Exo 2", sans-serif;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c5ab10;
+}
+
+.start {
+  font-size: 1.5rem;
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4rem;
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+  line-height: 0.7;
+}
+
+.slogan {
+  margin-bottom: 40px;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: linear-gradient(225deg, #111 0%, #565656 200%);
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.screen.back {
+  margin-top: 0vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn, .button-up, .start, .end-show__btn, .restart {
+  background-color: transparent;
+  border: 2px solid #c0c0c0;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.time-btn:hover, .button-up:hover, .start:hover, .restart:hover {
+  border: 2px solid #c5ab10;
+  color: #c5ab10;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.primary {
+  color: #3ab614;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(118.38deg, #222 -4.6%, #666 200.44%);
+  box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
+  overflow: hidden;
+}
+
+.end-show {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle {
+  background: linear-gradient(90deg, #c4e316 0%, #30c7ec 47%, #8446f7 100%);
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* .button-up {
+
+} */
+
+@media (max-width: 767px) {
+  .board {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .start, .time-btn, .button-up, .restart {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .slogan {
+    font-size: 0.6rem;
+  }
+}

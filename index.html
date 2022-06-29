@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <title>Mini Game</title>
+</head>
+
+<body>
+  <div class="screen">
+    <h1 class="heading">Тыкалка</h1>
+    <p class="slogan">(Жмякай на полную)</p>
+    <a href="#" id="start" class="start">Начать игру</a>
+  </div>
+
+  <div class="screen">
+    <h1>Выберите время:</h1>
+    <ul class="time-list" id="time-list">
+      <li>
+        <button class="time-btn" data-time="5">
+          5 сек
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="10">
+          10 сек
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="15">
+          15 сек
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="20">
+          20 сек
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="30">
+          30 сек
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="60">
+          60 сек
+        </button>
+      </li>
+
+    </ul>
+    <button class="button-up">Назад</button>
+  </div>
+
+  <div class="screen">
+    <h3>Осталось <span id="time">00:00</span></h3>
+    <div class="board" id="board"></div>
+  </div>
+</body>
+
+</html>
