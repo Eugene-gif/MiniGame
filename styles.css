@@ -36,6 +36,12 @@ h1 {
   font-size: 4rem;
 }
 
+h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 0;
+}
+
 .heading {
   margin: 0;
   padding: 0;
