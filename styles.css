@@ -38,8 +38,10 @@ h1 {
 
 h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   line-height: 0;
+  font-size: 1.5rem;
+  margin-top: -30px;
 }
 
 .heading {
@@ -114,6 +116,7 @@ h3 {
   box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
   overflow: hidden;
   margin: 10px;
+  margin-top: 0;
 }
 
 .restart {
@@ -132,7 +135,7 @@ h3 {
 @media (max-width: 767px) {
   .board {
     width: 90vw;
-    height: 85vh;
+    height: 80vh;
     border: 1px solid #3f51b5;
   }
   .start, .time-btn, .button-up, .restart {
