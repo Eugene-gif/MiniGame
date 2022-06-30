@@ -24,7 +24,6 @@ let time = 0;
 let score = 0;
 startBtn.addEventListener("click", (evt) => {
   evt.preventDefault();
-  screens[0].classList.remove("back");
   screens[0].classList.add("up");
 });
 
@@ -99,10 +98,6 @@ function finishGame() {
 
 buttonUp.addEventListener("click", (evt) => {
   evt.preventDefault();
-  
-  // screens[0].classList.remove("up");
-  // screens[0].classList.add("back");
-  // screens[0].classList.toggle('back');
   screens[0].classList.toggle('up');
 });
 
@@ -110,14 +105,10 @@ restart.addEventListener('click', (evt) => {
   evt.preventDefault();
   screens[1].classList.toggle('up');
   screens[0].classList.toggle('up');
-  // screens[1].classList.remove("up");
-  // screens[1].classList.add("back");
   localStorage.clear();
   window.location.reload();
 })
-/* <a class="restart" href="#" onclick="parent.location.reload(); return false;">
-	Заново
-</a> */
+
 function displayBlock () {
   return restart.style.display = 'block';
 }
