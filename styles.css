@@ -116,6 +116,7 @@ h1 {
   background: linear-gradient(118.38deg, #222 -4.6%, #666 200.44%);
   box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
   overflow: hidden;
+  margin: 10px;
 }
 
 .restart {
