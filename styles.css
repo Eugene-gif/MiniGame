@@ -54,21 +54,6 @@ h3 {
 .slogan {
   margin-bottom: 40px;
 }
-.del {
-	position: relative;
-	text-decoration: none;
-}
-.del:before {
-	content: "";
-	/* border: 2px solid white; */
-  background-color: white;
-	position: absolute;
-	width: 2px;
-	height: 12px;
-  top: 35%;
-  left: 35%;
-	transform: rotate(45deg);
-}
 
 .screen {
   display: flex;
